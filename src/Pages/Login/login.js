@@ -45,6 +45,10 @@ const Login = () => {
 
   useEffect(() => {
     return () => {
+      let token = localStorage.getItem("token");
+      if(token){
+        navigate("/Inicio");
+      }
       handleVisible();
     };
   });

@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 
+import { useNavigate } from "react-router-dom";
+
 const UserProfile = () => {
+  const navigate = useNavigate();
+
   const [data, setData] = React.useState([])
 
   const getUser = () => {
@@ -29,6 +33,8 @@ const UserProfile = () => {
             setData(JSON.parse(text));
           });
         } else {
+          localStorage.clear();
+          navigate("/Login");
           throw new Error(response.status);
         }
       })
