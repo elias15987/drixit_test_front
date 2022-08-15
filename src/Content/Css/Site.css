@@ -1,0 +1,33 @@
+.alturaLogin {
+    height: 95vh;
+}
+
+
+.radioLogin {
+    border-radius: 1rem;
+}
+
+
+.graphicCard {
+    max-height: 300px;
+}
+
+main {
+    padding: 50px 100px 0px 100px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+      margin-left: 0px;
+    }
+  }
+
+
+.footer {
+    z-index: 1;
+}
+
+.bg-lightgreen {
+    background-color: rgb(69, 182, 46);
+}
